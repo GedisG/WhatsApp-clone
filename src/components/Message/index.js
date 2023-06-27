@@ -3,7 +3,7 @@ import dayjs from 'dayjs';
 import relativeTime from 'dayjs/plugin/relativeTime';
 dayjs.extend(relativeTime);
 
-export const Message = ({message}) => {
+export const Message = ({ message }) => {
 
   const isMyMessage = () => {
     return message.user.id === 'u1';
@@ -21,25 +21,25 @@ export const Message = ({message}) => {
 }
 
 const styles = StyleSheet.create({
-    container: {
-      margin: 5,
-      padding: 10,
-      borderRadius: 10,
-      maxWidth: '80%',
-      
-      //Shadows 
-      shadowColor: "#000",
-      shadowOffset: {
-          width: 0,
-          height: 1,
-      },
-      shadowOpacity: 0.20,
-      shadowRadius: 1.41,
+  container: {
+    margin: 5,
+    padding: 10,
+    borderRadius: 10,
+    maxWidth: '80%',
 
-      elevation: 2,
+    //Shadows 
+    shadowColor: "#000",
+    shadowOffset: {
+      width: 0,
+      height: 1,
     },
-    time: {
-        color: 'gray',
-        alignSelf: 'flex-end'
-    }
+    shadowOpacity: 0.20,
+    shadowRadius: 1.41,
+
+    elevation: 2,
+  },
+  time: {
+    color: 'gray',
+    alignSelf: 'flex-end'
+  }
 })

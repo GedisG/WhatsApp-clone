@@ -4,15 +4,15 @@ import dayjs from 'dayjs';
 import relativeTime from 'dayjs/plugin/relativeTime';
 dayjs.extend(relativeTime);
 
-export const ContactListItem = ({user}) => {
-const navigation = useNavigation();
+export const ContactListItem = ({ user }) => {
+    const navigation = useNavigation();
 
     return (
-        <Pressable onPress={()=> console.log('starting a new conversation with ',user?.name)} style={styles.container}>
-             <Image 
-             source={{uri: user?.image}} 
-             style={styles.image}
-             />
+        <Pressable onPress={() => console.log('starting a new conversation with ', user?.name)} style={styles.container}>
+            <Image
+                source={{ uri: user?.image }}
+                style={styles.image}
+            />
             <View style={styles.content}>
                 <Text numberOfLines={1} style={styles.name}>{user?.name}</Text>
                 <Text style={styles.subTitle}>
@@ -23,9 +23,9 @@ const navigation = useNavigation();
     )
 }
 
-const styles = StyleSheet.create({ 
+const styles = StyleSheet.create({
     container: {
-        flexDirection:'row',
+        flexDirection: 'row',
         marginHorizontal: 10,
         marginVertical: 5,
         height: 70,
@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
     image: {
         width: 60,
         height: 60,
-        borderRadius:30,
+        borderRadius: 30,
         marginRight: 10
     },
     name: {

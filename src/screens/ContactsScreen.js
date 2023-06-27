@@ -4,10 +4,10 @@ import chats from '../../assets/data/chats.json';
 
 export const ContactsScreen = () => {
   return (
-    <FlatList 
-        data={chats} 
-        renderItem={({item}) => <ContactListItem user={item.user} />}
-        style={{ backgroundColor: 'white' }}
+    <FlatList
+      data={chats}
+      renderItem={({ item }) => <ContactListItem user={item.user} />}
+      style={{ backgroundColor: 'white' }}
     />
   )
 }

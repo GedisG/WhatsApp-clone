@@ -14,9 +14,9 @@ export const InputBox = () => {
 
   return (
     <SafeAreaView edges={['bottom']} style={styles.container}>
-      <AntDesign name='plus' size={20} color='royalblue'/>
-      <TextInput value={newMessage} onChangeText={setNewMessage} style={styles.input} placeholder='textInput'/>
-      <MaterialIcons onPress={onSend} style={styles.send} name='send' size={16} color='white'/>
+      <AntDesign name='plus' size={20} color='royalblue' />
+      <TextInput value={newMessage} onChangeText={setNewMessage} style={styles.input} placeholder='textInput' />
+      <MaterialIcons onPress={onSend} style={styles.send} name='send' size={16} color='white' />
     </SafeAreaView>
   )
 }

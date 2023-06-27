@@ -15,18 +15,18 @@ export const ChatScreen = () => {
         navigation.setOptions({ title: route.params.name });
     }, [route.params.name]);
 
-  return (
-    <KeyboardAwareScrollView>
-        <ImageBackground source={bg} style={styles.bg}>
-            <FlatList 
-                data={messages} 
-                renderItem={({item}) => <Message message={item}/>} 
-                style={styles.list} 
-            />
-            <InputBox />
-        </ImageBackground>
-    </KeyboardAwareScrollView>
-  )
+    return (
+        <KeyboardAwareScrollView>
+            <ImageBackground source={bg} style={styles.bg}>
+                <FlatList
+                    data={messages}
+                    renderItem={({ item }) => <Message message={item} />}
+                    style={styles.list}
+                />
+                <InputBox />
+            </ImageBackground>
+        </KeyboardAwareScrollView>
+    )
 }
 
 const styles = StyleSheet.create({
